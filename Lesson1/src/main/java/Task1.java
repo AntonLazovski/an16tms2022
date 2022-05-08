@@ -8,5 +8,6 @@ public class Task1 {
             }
         }
         System.out.println("kolichestvo pologitelnih chisel = " + count);
+        System.out.println(444);
     }
 }
