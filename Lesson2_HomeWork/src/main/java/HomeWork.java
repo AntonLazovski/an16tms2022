@@ -8,7 +8,7 @@ public class HomeWork {
         String b = "Home" + " " + "Work";
         System.out.println(b);
         System.out.println('$');
-        int c = 0b010111010;
+        int c = 0b0101110010;
         System.out.println(c);
         int d = 0144562;
         System.out.println(d);
