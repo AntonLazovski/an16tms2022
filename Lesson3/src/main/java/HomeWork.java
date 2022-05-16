@@ -24,10 +24,20 @@ public class HomeWork {
         System.out.println(max);
 
         int[] num = {1, 2, 3, 4, 5, 6}; // найти среднее значение из массива чисел
-        int sum = 0;
+        double sum = 0;
         for (int z : num) {
             sum += z;
         }
         System.out.println(sum / num.length);
+
+        int time = (int) (Math.random() * 28800), hours;
+        double trace, tm = (double) time, del = 3600;
+        trace = (double) (tm / del);
+        if (time < 3600) {
+            System.out.println(time + "\n" + trace + "\n" + "Do kontsa rabochego dnya ostalos menee chasa");
+        } else {
+            hours = (int) (time / 3600);
+            System.out.println(time + "\n" + trace + "\n" + "Do kontsa rabochego dnya ostalos " + hours + " chasov");
+        }
     }
 }
