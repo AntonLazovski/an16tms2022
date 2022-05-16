@@ -41,7 +41,7 @@ public class HW4 {
         int ameba;
         for (int i = 0; i < 24; i += 3) ;
         {
-            ameba *= 2;
+            ameba = ameba * 2;
             System.out.println(ameba);
         }
 
