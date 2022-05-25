@@ -4,8 +4,24 @@ import by.tms.model.Computer;
 
 public class MainComputer {
     public static void main(String[] args) {
-        Computer computer = new Computer(" intel core i7", "16GB", "2TB", "on");
-        System.out.println(computer);
+        int cycleCounter = 11;
+        Computer computer = new Computer("intel core i7", 16, 2000, cycleCounter);
+
+        computer.off();
         computer.on();
+        computer.on();
+        computer.off();
+        computer.on();
+        computer.on();
+        computer.off();
+
+        for (int i = 0; i < cycleCounter; i++) {
+            if (computer.isBurned()) {
+                break;
+            }
+            computer.on();
+            computer.off();
+        }
+        System.out.println(computer);
     }
 }
