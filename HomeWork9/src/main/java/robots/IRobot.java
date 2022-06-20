@@ -4,4 +4,6 @@ public interface IRobot {
     void action();
 
     int price();
+
+    int getPrice();
 }

@@ -1,7 +1,7 @@
 package robots.hands;
 
-public interface IHand {
-    void upHand();
+import robots.price.IPrice;
 
-    int price();
+public interface IHand extends IPrice {
+    void upHand();
 }

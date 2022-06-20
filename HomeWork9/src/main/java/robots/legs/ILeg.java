@@ -1,7 +1,7 @@
 package robots.legs;
 
-public interface ILeg {
-    void step();
+import robots.price.IPrice;
 
-    int price();
+public interface ILeg extends IPrice {
+    void step();
 }

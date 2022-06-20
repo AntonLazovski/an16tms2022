@@ -1,22 +1,14 @@
 package robots.heads;
 
-public class SamsungHead implements IHead {
-    private int price;
+import robots.price.RobotParts;
 
+public class SamsungHead extends RobotParts implements IHead {
     public SamsungHead(int price) {
-        this.price = price;
-    }
-
-    public SamsungHead() {
+        super(price);
     }
 
     @Override
     public void speak() {
         System.out.println("Говорит голова Samsung");
-    }
-
-    @Override
-    public int price() {
-        return price();
     }
 }
