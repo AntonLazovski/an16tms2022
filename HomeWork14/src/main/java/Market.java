@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class Main {
+public class Market {
     public static void main(String[] args) {
         CashDesk[] cashDesk = {new CashDesk("cash desk N1"), new CashDesk("cash desk N2"),
                 new CashDesk("cash desk N3")};
