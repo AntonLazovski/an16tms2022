@@ -1,22 +1,14 @@
 package robots.hands;
 
-public class ToshibaHand implements IHand {
-    private int price;
+import robots.price.RobotParts;
 
+public class ToshibaHand extends RobotParts implements IHand {
     public ToshibaHand(int price) {
-        this.price = price;
-    }
-
-    public ToshibaHand() {
+        super(price);
     }
 
     @Override
     public void upHand() {
         System.out.println("Поднимаются руки Toshiba");
-    }
-
-    @Override
-    public int price() {
-        return price();
     }
 }

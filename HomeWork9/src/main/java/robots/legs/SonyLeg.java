@@ -1,22 +1,14 @@
 package robots.legs;
 
-public class SonyLeg implements ILeg {
-    private int price;
+import robots.price.RobotParts;
 
+public class SonyLeg extends RobotParts implements ILeg {
     public SonyLeg(int price) {
-        this.price = price;
-    }
-
-    public SonyLeg() {
+        super(price);
     }
 
     @Override
     public void step() {
-        System.out.println("Делает шаг ноги Sony");
-    }
-
-    @Override
-    public int price() {
-        return price();
+        System.out.println("Нога Sony сделала шаг");
     }
 }

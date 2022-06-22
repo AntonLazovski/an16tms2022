@@ -1,7 +1,7 @@
 package robots.heads;
 
-public interface IHead {
-    void speak();
+import robots.price.IPrice;
 
-    int price();
+public interface IHead extends IPrice {
+    void speak();
 }

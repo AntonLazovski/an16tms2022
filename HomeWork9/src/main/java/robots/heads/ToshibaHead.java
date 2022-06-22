@@ -1,22 +1,14 @@
 package robots.heads;
 
-public class ToshibaHead implements IHead {
-    private int price;
+import robots.price.RobotParts;
 
+public class ToshibaHead extends RobotParts implements IHead {
     public ToshibaHead(int price) {
-        this.price = price;
-    }
-
-    public ToshibaHead() {
+        super(price);
     }
 
     @Override
     public void speak() {
         System.out.println("Говорит голова Toshiba");
-    }
-
-    @Override
-    public int price() {
-        return price();
     }
 }

@@ -1,22 +1,14 @@
 package robots.legs;
 
-public class SamsungLeg implements ILeg {
-    private int price;
+import robots.price.RobotParts;
 
+public class SamsungLeg extends RobotParts implements ILeg {
     public SamsungLeg(int price) {
-        this.price = price;
-    }
-
-    public SamsungLeg() {
+        super(price);
     }
 
     @Override
     public void step() {
-        System.out.println("Делает шаг ноги Samsung");
-    }
-
-    @Override
-    public int price() {
-        return price();
+        System.out.println("Нога Samsung сделала шаг");
     }
 }

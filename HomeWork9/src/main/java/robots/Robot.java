@@ -1,9 +1,6 @@
 package robots;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import robots.hands.IHand;
 import robots.heads.IHead;
 import robots.legs.ILeg;
@@ -12,6 +9,7 @@ import robots.legs.ILeg;
 @Setter
 @Getter
 @ToString
+@NoArgsConstructor
 
 public class Robot implements IRobot {
     private IHand hand;
@@ -27,8 +25,13 @@ public class Robot implements IRobot {
 
     @Override
     public int price() {
-        int price = head.price() + hand.price() + leg.price();
-        return price;
+        return 0;
+    }
+
+
+    @Override
+    public int getPrice() {
+        return head.getPrice() + hand.getPrice() + leg.getPrice();
     }
 }
 

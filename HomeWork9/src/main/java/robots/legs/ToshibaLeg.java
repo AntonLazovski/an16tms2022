@@ -1,22 +1,14 @@
 package robots.legs;
 
-public class ToshibaLeg implements ILeg {
-    private int price;
+import robots.price.RobotParts;
 
+public class ToshibaLeg extends RobotParts implements ILeg {
     public ToshibaLeg(int price) {
-        this.price = price;
-    }
-
-    public ToshibaLeg() {
+        super(price);
     }
 
     @Override
     public void step() {
-        System.out.println("Делает шаг ноги Toshiba");
-    }
-
-    @Override
-    public int price() {
-        return price();
+        System.out.println("Нога Toshiba сделала шаг");
     }
 }
